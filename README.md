@@ -1,16 +1,24 @@
-# React + Vite
+Yeh lo ek professional aur clean README.md file jo tum apne GitHub repository ke liye direct use kar sakte ho:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quozio Clone 💬
+A modern, responsive web application inspired by Quozio, built using React. It allows users to effortlessly create, customize, and view quotes with a seamless experience.
 
-Currently, two official plugins are available:
+✨ Features
+Dynamic Quote Generation: Type any quote and author name to instantly generate and stack new quote cards in your feed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Light & Dark Mode: Professional 3D neumorphic theme toggle with smooth transitions.
 
-## React Compiler
+Persistent Settings: Remembers user theme preferences using localStorage.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive Design: Clean and professional UI layout optimized for various screen sizes.
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+React (Vite)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JavaScript (ES6+)
+
+CSS3 (Custom styling & Neumorphic effects)
+
+Context API (State management for themes)
+
+🚀 Getting Started
