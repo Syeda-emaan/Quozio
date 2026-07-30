@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto; /* Taake scrolling smooth ho aur neechay space bani rahay */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme Background */
+.app-container.light {
+  background-color: #EAECF0;
+  color: #0B0909;
+}
+
+/* Dark Theme Colors */
+.app-container.dark {
+  background-color: #000000;
+  color: #FFEBD3;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.app-container.dark .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e11d48;
+}
+
+.brand-svg {
+  color: #e11d48;
+}
+
+/* Main Container Layout with extra bottom padding */
+.main-content {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 20px 80px 20px; /* Neechay 80px ki space dedihai taake card end par chipke na */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Form Card Styling */
+.form-card {
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.app-container.light .form-card {
+  background-color: #ffffff;
+  border: 1px solid #f2dede;
+}
+
+.app-container.dark .form-card {
+  background-color: #161414;
+  border: 1px solid #262222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.form-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.app-container.light textarea, 
+.app-container.light input {
+  background-color: #faf6f6;
+  border: 1px solid #e8d7d7;
+  color: #0B0909;
+}
+
+.app-container.dark textarea, 
+.app-container.dark input {
+  background-color: #1f1b1b;
+  border: 1px solid #332d2d;
+  color: #FFEBD3;
+}
+
+textarea:focus, input:focus {
+  border-color: #e11d48;
+}
+
+.create-btn {
+  padding: 14px;
+  background-color: #e11d48;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.create-btn:hover {
+  background-color: #be123c;
+}
+
+/* Quotes Feed Section */
+.preview-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.quotes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-preview-box {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 40px 30px;
+  border-radius: 14px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.quote-inner {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.preview-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.preview-author {
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
