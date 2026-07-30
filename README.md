@@ -72,11 +72,6 @@ Developed using reusable React components, making the project clean, scalable, a
 
 ---
 
-## 📸 Preview
-
-> *Add screenshots or a live demo GIF here to showcase the application.*
-
----
 
 ## 💡 Future Enhancements
 
